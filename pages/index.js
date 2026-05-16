@@ -100,8 +100,8 @@ export default function Home() {
   const canSubmit = brand && phase && clientEmail && files.length > 0 && !loading
 
   if (status === "loading") return (
-    <div style={styles.center}>
-      <div style={styles.spinner}></div>
+    <div style={{ display: "flex", alignItems: "center", justifyContent: "center", minHeight: "100vh" }}>
+      <div style={{ width: 32, height: 32, border: "3px solid #eee", borderTopColor: "#1a1a1a", borderRadius: "50%" }}></div>
     </div>
   )
 
